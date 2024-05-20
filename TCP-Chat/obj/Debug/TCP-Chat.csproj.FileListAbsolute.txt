@@ -1,0 +1,8 @@
+D:\Programms\C#\TCP-Chat\TCP-Chat\bin\Debug\TCP-Chat.exe.config
+D:\Programms\C#\TCP-Chat\TCP-Chat\bin\Debug\TCP-Chat.exe
+D:\Programms\C#\TCP-Chat\TCP-Chat\bin\Debug\TCP-Chat.pdb
+D:\Programms\C#\TCP-Chat\TCP-Chat\obj\Debug\TCP-Chat.csproj.AssemblyReference.cache
+D:\Programms\C#\TCP-Chat\TCP-Chat\obj\Debug\TCP-Chat.csproj.SuggestedBindingRedirects.cache
+D:\Programms\C#\TCP-Chat\TCP-Chat\obj\Debug\TCP-Chat.csproj.CoreCompileInputs.cache
+D:\Programms\C#\TCP-Chat\TCP-Chat\obj\Debug\TCP-Chat.exe
+D:\Programms\C#\TCP-Chat\TCP-Chat\obj\Debug\TCP-Chat.pdb
