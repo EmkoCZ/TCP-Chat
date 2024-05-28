@@ -11,6 +11,7 @@ namespace TCP_Chat.Commands
     {
         public void Handle(string data, NetworkStream networkStream)
         {
+            // nastaveni username uzivatele
             UsersHelper.GetUserByNetStream(networkStream).SetUsername(data.Split('/')[1]);
         }
     }

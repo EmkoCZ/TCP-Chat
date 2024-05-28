@@ -15,6 +15,7 @@ namespace TCP_Chat
 
         private static void Menu()
         {
+            // Menu pro zboleni spusteni
             Console.WriteLine("Enter number form 1 to 2");
             Console.WriteLine("1. Client");
             Console.WriteLine("2. Server");
@@ -24,15 +25,18 @@ namespace TCP_Chat
                 switch (input)
                 {
                     case 1:
+                        // Spusteni klienta
                         new Client();
                         break;
                     case 2:
+                        // Spusteni serveru
                         new Server();
                         break;
                     default:
                         Console.Clear();
                         Console.WriteLine("Numbers from 1 to 2 PLEASE");
                         Menu();
+                        // Pokud uzivatel napise spatny vyber, spustit znovu vyber
                         break;
                 }
 
@@ -42,6 +46,7 @@ namespace TCP_Chat
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Please enter only numbers.");
                 Menu();
+                // Pokud uzivatel napise spatny vyber, spustit znovu vyber
             }
         }
     }

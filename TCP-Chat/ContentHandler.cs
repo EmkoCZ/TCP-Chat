@@ -8,29 +8,39 @@ namespace TCP_Chat
 {
     public class ContentHandler
     {
+        // list zprav z chatu
         private List<string> messages;
 
         public ContentHandler()
         {
+            // nastav messages
             messages = new List<string>();
+            // pridani prazdne zpravy pro vyvarovani se cteni NULL
             messages.Add("");
         }
 
-        public void AddMessage(string message)
+        public void Handle(string message)
         {
-            Console.WriteLine("Added " + message);
+            // Pokud by se funkce rozsirili, zde by se pridala logika na rozliseni dat
             messages.Add(message);
         }
 
         public void PrintContent()
         {
-            //for (int i = messages.Count-1; i > (messages.Count - 20); i--)
-            //{
-            //    Console.WriteLine(messages[i]);
-            //}
-            foreach (var item in messages)
+            // Pokud je mene nez 16 zprav, vypis je vsechny
+            if (messages.Count < 16)
             {
-                Console.WriteLine(item);
+                foreach (var item in messages)
+                {
+                    Console.WriteLine(item);
+                }
+            } else
+            {
+                // Pokud jich je vic, vypis jen poslednich x, aby se nevypisovalo treba 1000 zprav...
+                for (int i = messages.Count - 15; i < messages.Count; i++)
+                {
+                    Console.WriteLine(messages[i]);
+                }
             }
         }
     }

@@ -9,6 +9,8 @@ namespace TCP_Chat
 {
     public interface ICommandHandler
     {
-        void Handle(string data, NetworkStream networkStream);
+        // Interface pro prikazy
+        // data a networkStream pro prozeznani uzivatele co poslal prikaz
+        void Handle(string data, NetworkStream networkStream); // zpracuj data...
     }
 }
